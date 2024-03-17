@@ -739,7 +739,7 @@ footer {
       gap: 0.5rem;
     }
     & .nav-links {
-      background: var(--supporting-color);
+      background: var(--light-bg--color);
       padding: 0 7px;
       border-radius: 5px;
       -webkit-border-radius: 5px;
@@ -756,7 +756,7 @@ footer {
       -o-transition: all 0.3s ease;
     }
     & .nav-links:hover {
-      background:var(--main-color);
+      background:var(--supporting-color);
     }
   }
 

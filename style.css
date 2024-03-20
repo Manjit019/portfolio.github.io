@@ -55,6 +55,7 @@ html {
   --supporting-color: #535c91;
   --black-color: #010000;
   --white-color: #ffffff;
+  --heading-color: #4443b1;
 }
 
 li {
@@ -152,7 +153,7 @@ span {
 
 .heading {
   text-transform: uppercase;
-  color: var(--black-color);
+  color: var(--heading-color);
   position: relative;
 }
 
@@ -163,7 +164,7 @@ span {
   bottom: -8px;
   width: 4px;
   aspect-ratio: 1;
-  border: 5px solid var(--primary-color);
+  border: 5px solid var(--main-color);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -756,7 +757,7 @@ footer {
       -o-transition: all 0.3s ease;
     }
     & .nav-links:hover {
-      background:var(--supporting-color);
+      background: var(--supporting-color);
     }
   }
 

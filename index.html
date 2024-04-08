@@ -19,12 +19,16 @@
 
   <body>
     <!-- header section starts  -->
-    <header>
+    <header class="header">
+      <div class="three-dot">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
       <div class="left-nav">My Portfolio</div>
       <nav class="right-nav">
         <ul>
           <li class="nav-links">
-            <a href="#">Home</a>
+            <a href="#">Home </a>
           </li>
           <li class="nav-links">
             <a href="#aboutme">About</a>
@@ -43,17 +47,22 @@
           </li>
         </ul>
       </nav>
+      
     </header>
     <!-- header section ends  -->
 
     <!-- main-section starts  -->
     <main class="hero-section grid grid-two--cols">
       <div class="hero-left">
-        <h4>Hey There !</h4>
-        <h2>I'm <span>Manjit Kumar</span></h2>
-        <p>I am a BCA final year student.</p>
+        <div class="intro-text">
+          <h4>Hey There !</h4>
+          <h2>I'm <span>Manjit Kumar</span></h2>
+          <p>I am a BCA final year student.</p>
+        </div>
         <button type="button" class="btn">⬇Download Resume</button>
-        <button type="button" class="btn btn-secondary">My Works <b>⇢</b></button>
+        <button type="button" class="btn btn-secondary">
+          My Works <b>⇢</b>
+        </button>
         <div class="social">
           <h3>GET IN TOUCH :</h3>
           <a href="https://www.instagram.com/.manjitk.019_____" target="_blank">
@@ -214,7 +223,8 @@
         <div class="project-desc">
           <h5>Hostel Project :</h5>
           <p>A hostel project of DC college hostel.</p>
-          <button type="button" class="btn">View</button>
+          <a href="https://manjit019.github.io/DC-hostel.github.io/" target="_blank">
+          <button type="button" class="btn">View</button></a>
         </div>
       </div>
       <!-- 2nd project -->
@@ -231,12 +241,13 @@
       <!-- 3rd project -->
       <div class="projects-container">
         <div class="project-banner">
-          <!-- <img src="dc hostel project img.jpg" alt="Hostel project banner"> -->
+          <img src="./Images/weatherApp.jpg" alt="weatherApp project banner">
         </div>
         <div class="project-desc">
           <h5>Weather App :</h5>
           <p>View your current Weather of your city.</p>
-          <button type="button" class="btn">View</button>
+          <a href="https://manjit019.github.io/WeatherApp.github.io/">
+          <button type="button" class="btn">View</button></a>
         </div>
       </div>
       <!--  4th project -->
@@ -305,7 +316,7 @@
         </div>
         <div class="extra-btns">
           <button type="button" class="btn">📧Email me</button>
-          <button type="button" class="btn-wa">📞WhatsApp</button>
+          <button type="button" class="btn-wa"><a href="http://wa.me/+917481092390?text=>Hiii"><i class="fa fa-whatsapp"></i>  WhatsApp</a></button>
         </div>
       </div>
       <div class="contact-right">
@@ -316,7 +327,7 @@
     <div class="thanks-container">
       <div class="thanks">
         <h4>😊Thank You for your attention</h4>
-        <p style="color: rgb(255, 178, 83);">have a good day✨</p>
+        <p style="color: rgb(255, 178, 83)">have a good day✨</p>
       </div>
     </div>
     <!-- footer section starts -->
@@ -366,5 +377,6 @@
       </div>
     </footer>
     <!-- footer section starts -->
+    <script src="script.js"></script>
   </body>
 </html>

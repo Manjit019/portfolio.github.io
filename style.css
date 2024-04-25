@@ -419,6 +419,9 @@ header {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
   }
+  & p{
+   text-wrap: wrap;
+  }
 }
 
 /* education section ends  */
@@ -606,7 +609,7 @@ header {
     & p {
       font-size: 12px;
     }
-    & .btn{
+    & .btn {
       width: 100%;
     }
   }
@@ -738,6 +741,39 @@ footer {
 
 /* <!-- footer section starts --> */
 
+/* scroll to top starts */
+#scroll-top {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: sticky;
+  bottom: 1rem;
+  left: 90%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  background-color: var(--maincolor);
+  border: 3px solid var(--supporting-color);
+  padding: 1rem;
+  & .fa-solid {
+    color: #000000;
+    font-size: 18px;
+  }
+  &:hover {
+    background-color: var(--light-bg--color);
+  }
+}
 /* Media queries starts  */
 @media (width<870px) {
   a,
@@ -780,7 +816,6 @@ footer {
       -moz-border-radius: 20%;
       -ms-border-radius: 20%;
       -o-border-radius: 20%;
-    
 
       & .fa-bars {
         color: var(--white-color);

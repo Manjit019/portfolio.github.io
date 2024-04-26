@@ -304,6 +304,9 @@ header {
     margin-top: 3rem;
     display: flex;
     gap: 1rem;
+    & .btn{
+    font-size:17px;
+    }
   }
 }
 
@@ -438,7 +441,7 @@ header {
     -o-border-radius: 10px;
   }
   & p {
-    text-wrap: nowrap;
+   /* text-wrap: nowrap;*/
     line-height: 1.2rem;
   }
 }
@@ -954,7 +957,7 @@ footer {
   .hero-left-btns {
     margin-top: 2rem;
     & .btn {
-      font-size: 15px;
+      font-size: 14px;
     }
   }
   .hero-right figure img {

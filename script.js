@@ -17,8 +17,8 @@ close.addEventListener("click",()=>{
 const scrolltopBtn=document.getElementById("scroll-top");
 
 window.onscroll=function(){
-   if(document.body.scrollTop>50 || document.documentElement.scrollTop>50){
-    scrolltopBtn.style.bottom="1rem";
+   if(document.body.scrollTop>30 || document.documentElement.scrollTop>30){
+    scrolltopBtn.style.bottom="2rem";
    }
    else{
     scrolltopBtn.style.bottom="-30%";

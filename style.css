@@ -100,6 +100,7 @@ span {
   padding: 10px 15px;
   color: var(--white-color);
   background-color: var(--main-color);
+  text-transform: capitalize;
   border: none;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -299,9 +300,10 @@ header {
     margin-top: 1rem;
   }
 
-  & .btn {
+  & .hero-left-btns {
     margin-top: 3rem;
-    margin-right: 10px;
+    display: flex;
+    gap: 1rem;
   }
 }
 
@@ -347,13 +349,20 @@ header {
 
 .about-left {
   background: var(--light-bg--color);
-  padding: 1.3rem;
-  border-style: dashed;
+  padding: 0.5rem;
+  border-style: double;
   border-radius: 6px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
+  writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: vertical-lr;
+  rotate: 180deg;
+  text-align: center;
+  text-transform: capitalize;
+  color: #6d6a6aea;
   & img {
     max-width: 5rem;
     aspect-ratio: 1;
@@ -371,11 +380,10 @@ header {
   flex-direction: column;
   gap: 2rem;
 
-  & p{
+  & p {
     margin-top: -1rem;
     text-transform: none;
     line-height: 150%;
-    letter-spacing: 1px;
     text-align: justify;
   }
 }
@@ -427,9 +435,9 @@ header {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
   }
-  & p{
-   text-wrap: wrap;
-   line-height: 1.2rem;
+  & p {
+    text-wrap: nowrap;
+    line-height: 1.2rem;
   }
 }
 
@@ -941,7 +949,12 @@ footer {
       }
     }
   }
-
+  .hero-left-btns {
+    margin-top: 2rem;
+    & .btn {
+      font-size: 15px;
+    }
+  }
   .hero-right figure img {
     max-width: 100%;
     border-top-left-radius: 0%;

@@ -900,6 +900,7 @@ footer {
       opacity: 0;
       visibility: hidden;
       pointer-events: none;
+      overflow: auto;
       & ul {
         display: flex;
         flex-direction: column;
@@ -921,6 +922,7 @@ footer {
         -moz-transition: all 0.3s ease;
         -ms-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
+
       }
       & .nav-links:hover {
         background: var(--supporting-color);

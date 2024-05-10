@@ -513,7 +513,8 @@ header {
     width: 50px;
     position: absolute;
     top: 0.4rem;
-    left: 91%;
+    left:95%;
+    margin-left: -25px;
     color: var(--black-color);
     background: var(--bg-color);
     font-size: small;
@@ -545,7 +546,7 @@ header {
   }
 
   & .carret {
-    left: 76%;
+    left: 80%;
   }
 }
 
@@ -555,7 +556,7 @@ header {
   }
 
   & .carret {
-    left: 81%;
+    left: 85%;
   }
 }
 
@@ -565,7 +566,7 @@ header {
   }
 
   & .carret {
-    left: 21%;
+    left: 25%;
   }
 }
 
@@ -575,7 +576,7 @@ header {
   }
 
   & .carret {
-    left: 71%;
+    left: 75%;
   }
 }
 
@@ -584,7 +585,6 @@ header {
 /* <!-- projects section starts  --> */
 .project-section {
   width: 100%;
-  /* height: 21rem; */
   background: var(--bg-color);
   gap: 2rem;
   /* display: flex; */
@@ -595,9 +595,9 @@ header {
   width: 100%;
   background: var(--light-bg--color);
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
   gap: 1rem;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -641,6 +641,7 @@ header {
   & .project-desc {
     width: 100%;
     display: flex;
+    /* display: grid; */
     flex-direction: column;
     justify-content: space-around;
     gap: 1rem;
@@ -766,6 +767,7 @@ textarea {
 footer {
   width: 100%;
   background: var(--primary-color);
+
   & .copyright {
     width: 100%;
     color: var(--white-color);
@@ -796,26 +798,25 @@ footer {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  position: sticky;
-  bottom: 1rem;
+  position: fixed;
   left: 85%;
   cursor: pointer;
-  z-index: 999;
+  z-index: 9999;
   transition: all 0.4s linear;
   -webkit-transition: all 0.4s linear;
   -moz-transition: all 0.4s linear;
   -ms-transition: all 0.4s linear;
   -o-transition: all 0.4s linear;
-  background-color: var(--maincolor);
+  background-color: var(--white-color);
   border: 3px solid var(--supporting-color);
   padding: 1rem;
   display: none;
   & .fa-solid {
-    color: #000000;
+    color: var(--heading-color);
     font-size: 18px;
   }
   &:hover {
-    background-color: var(--light-bg--color);
+    background-color: rgb(244, 213, 103);
   }
 }
 /* Media queries starts  */
@@ -1013,11 +1014,7 @@ footer {
     -o-transform: rotate(90deg);
   }
 
-  .skill-bar {
-    & .carret {
-      margin-left: -0.6rem;
-    }
-  }
+  
   .thanks {
     width: 75%;
   }

@@ -509,6 +509,7 @@ header {
     position: relative;
   }
 
+
   .carret {
     width: 50px;
     position: absolute;
@@ -540,6 +541,20 @@ header {
   }
 }
 
+.skill-bar-progress::after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #ff1313;
+  background: var(--heading-color);
+  position: absolute;
+  right: -4px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 .skills-bar-container:nth-child(2) {
   & .skill-bar-progress {
     width: 80%;

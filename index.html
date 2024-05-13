@@ -37,9 +37,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <!-- <script>
-    AOS.init();
-  </script> -->
+ 
   <body>
     <!-- header section starts  -->
     <header class="header">
@@ -72,18 +70,18 @@
       </nav>
     </header>
     <!-- header section ends  -->
-    
+
     <!-- main-section starts  -->
     <main class="hero-section grid grid-two--cols">
-      <div class="hero-left">
-        <div class="intro-text">
+      <div class="hero-left" data-aos="fade">
+        <div class="intro-text" data-aos="fade-down">
           <h5>Hey There !</h5>
           <h2>I'm <span>Manjit Kumar</span></h2>
           <p>I am a BCA final year student.</p>
         </div>
         <div class="hero-left-btns">
           <a href="Manjit Resume.pdf" download>
-            <button type="button" class="btn">
+            <button type="button" class="btn" data-aos="zoom-in">
               <i class="fa-solid fa-circle-down"></i> Download Resume
             </button></a
           >
@@ -91,45 +89,45 @@
             type="button"
             class="btn btn-secondary"
             onclick="document.getElementById('myprojects').scrollIntoView();"
-          >
-            My Works <b>⇢</b>
+          data-aos="zoom-in">
+            My Works <b></b>
           </button>
         </div>
         <div class="social">
-          <h4>GET IN TOUCH :</h4>
-          <div class="social-icons">
+          <h4 data-aos="fade-right">GET IN TOUCH :</h4>
+          <div class="social-icons" >
             <a
               href="https://www.instagram.com/.manjitk.019_____"
               target="_blank"
             >
-              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-instagram" data-aos="zoom-in"></i>
             </a>
             <a
               href="https://m.facebook.com/p/Manjit-Kumar-100051075008192/?wtsid=rdr_0jBLrmR72ct9vll4A"
               target="_blank"
             >
-              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-facebook" data-aos="zoom-in"></i>
             </a>
             <a
               href="https://x.com/MNCreativezone2?t=5RdojkrHk5LuMGHt_gcgnw&s=09"
               target="_blank"
             >
-              <i class="fa-brands fa-square-x-twitter"></i>
+              <i class="fa-brands fa-square-x-twitter" data-aos="zoom-in"></i>
             </a>
             <a href="https://github.com/Ssoftwaredeveloper21" target="_blank">
-              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-github" data-aos="zoom-in"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/manjit-kumar-b33a11264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
             >
-              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-linkedin" data-aos="zoom-in"></i>
             </a>
           </div>
         </div>
       </div>
       <div class="hero-right">
-        <figure>
+        <figure data-aos="flip-up">
           <img src="./Images/Portfolio bg profile.jpg" alt="Portfolio image" />
         </figure>
       </div>
@@ -139,13 +137,13 @@
 
     <!-- About section starts  -->
     <section class="about-section" id="aboutme">
-      <div class="about-left">
+      <div class="about-left" data-aos="fade-left">
         about me in brief
         <!-- <img src="./Images/Portfolio bg profile.jpg" alt="about-image" /> -->
       </div>
-      <div class="about-right">
-        <h3 class="heading">About me</h3>
-        <p>
+      <div class="about-right" >
+        <h3 class="heading" data-aos="fade-up">About me</h3>
+        <p data-aos="fade-right">
           I am a diligent BCA student with a keen interest in exploring the
           dynamic world of computer applications. Throughout my academic
           journey, I have developed a solid foundation in programming languages
@@ -163,21 +161,24 @@
 
     <!-- Education section starts  -->
     <div class="section-heading" id="myeducation">
-      <h3 class="heading">Education Details :</h3>
+      <h3 class="heading" data-aos="zoom-out">Education Details :</h3>
     </div>
     <section class="education-section">
-      <div class="education-degrees">
-        <h5>Matriculation(10th)</h5>
+      <div class="education-degrees bca-degree" data-aos="fade-up">
+        <span class="ed-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+        <h5>BCA</h5>
         <div class="degree">
-          <p><span>Year : </span><b>2018-2019</b></p>
-          <p><span>From : </span>SKSSS High school raghopur</p>
-          <p><span>Board : </span> BSEB Patna</p>
-          <p>Result : <span>First</span></p>
-          <p>Obtained marks : <span>399</span>/500</p>
+          <p><span>Year : </span><b>2021-2024</b></p>
+          <p><span>From : </span>R.N college,Hajipur</p>
+          <p><span>University : </span>BRABU Muzaffarpur</p>
+          <p>Result : <span>Not declared</span></p>
+          <p>Obtained marks : <span></span>/</p>
         </div>
       </div>
+
       <div class="line"></div>
-      <div class="education-degrees">
+      <div class="education-degrees inter"data-aos="fade-up">
+        <span class="ed-icon"><i class="fa-solid fa-school"></i></span>
         <h5>Intermidiate(+2)</h5>
         <div class="degree">
           <p><span>Year : </span><b>2019-2021</b></p>
@@ -188,27 +189,30 @@
         </div>
       </div>
       <div class="line"></div>
-      <div class="education-degrees">
-        <h5>BCA</h5>
+      <div class="education-degrees matric" data-aos="fade-up">
+        <span class="ed-icon"
+          ><i class="fa-solid fa-school-circle-check"></i
+        ></span>
+        <h5>Matriculation(10th)</h5>
         <div class="degree">
-          <p><span>Year : </span><b>2021-2024</b></p>
-          <p><span>From : </span>R.N college,Hajipur</p>
-          <p><span>University : </span>BRABU Muzaffarpur</p>
-          <p>Result : <span>Not declared</span></p>
-          <p>Obtained marks : <span></span>/</p>
+          <p><span>Year : </span><b>2018-2019</b></p>
+          <p><span>From : </span>SKSSS High school raghopur</p>
+          <p><span>Board : </span> BSEB Patna</p>
+          <p>Result : <span>First</span></p>
+          <p>Obtained marks : <span>399</span>/500</p>
         </div>
       </div>
     </section>
     <!-- Educarion section ends  -->
     <!-- skills section starts -->
     <section class="skills-section grid grid-two--cols" id="myskills">
-      <div class="skills-left">
+      <div class="skills-left" data-aos="flip-left">
         <img src="./Images/flat-design-api-illustration.avif" alt="skills" />
       </div>
-      <div class="skills-right">
+      <div class="skills-right" data-aos="fade-up">
         <h3 class="heading">Skills</h3>
-        <div class="skill-container">
-          <div class="skills-bar-container">
+        <div class="skill-container" >
+          <div class="skills-bar-container" data-aos="fade-up">
             <h5>HTML/CSS</h5>
             <div class="skill-bar">
               <div class="skill-bar-progress"></div>
@@ -216,7 +220,7 @@
             </div>
           </div>
 
-          <div class="skills-bar-container">
+          <div class="skills-bar-container" data-aos="fade-up">
             <h5>JavaScript</h5>
             <div class="skill-bar">
               <div class="skill-bar-progress"></div>
@@ -224,7 +228,7 @@
             </div>
           </div>
 
-          <div class="skills-bar-container">
+          <div class="skills-bar-container" data-aos="fade-up">
             <h5>Python</h5>
             <div class="skill-bar">
               <div class="skill-bar-progress"></div>
@@ -232,7 +236,7 @@
             </div>
           </div>
 
-          <div class="skills-bar-container">
+          <div class="skills-bar-container" data-aos="fade-up">
             <h5>MERN</h5>
             <div class="skill-bar">
               <div class="skill-bar-progress"></div>
@@ -240,7 +244,7 @@
             </div>
           </div>
 
-          <div class="skills-bar-container">
+          <div class="skills-bar-container" data-aos="fade-up">
             <h5>Others(C/C++/Java/Data Structures)</h5>
             <div class="skill-bar">
               <div class="skill-bar-progress"></div>
@@ -253,12 +257,12 @@
     <!-- skills section ends -->
 
     <!-- projects section starts  -->
-    <div class="section-heading" id="myprojects">
+    <div class="section-heading" id="myprojects" data-aos="fade-right">
       <h3 class="heading">Projects :</h3>
     </div>
     <section class="project-section grid grid-four-cols">
       <!-- 1st project -->
-      <div class="projects-container">
+      <div class="projects-container" data-aos="fade-up">
         <div class="project-banner">
           <img
             src="./Images/dc hostel project img.jpg"
@@ -277,7 +281,7 @@
         </div>
       </div>
       <!-- 2nd project -->
-      <div class="projects-container">
+      <div class="projects-container" data-aos="fade-up">
         <div class="project-banner">
           <img src="./Images/todo app banner.png" alt="ToDo list app banner" />
         </div>
@@ -293,7 +297,7 @@
         </div>
       </div>
       <!-- 3rd project -->
-      <div class="projects-container">
+      <div class="projects-container" data-aos="fade-up">
         <div class="project-banner">
           <img src="./Images/weatherApp.jpg" alt="weatherApp project banner" />
         </div>
@@ -306,7 +310,7 @@
         </div>
       </div>
       <!--  4th project -->
-      <div class="projects-container">
+      <div class="projects-container" data-aos="fade-up">
         <div class="project-banner">
           <!-- <img src="dc hostel project img.jpg" alt="Hostel project banner"> -->
         </div>
@@ -346,10 +350,10 @@
     <!-- contact section starts -->
     <section class="contact-section grid grid-two--cols" id="contactme">
       <div class="contact-left">
-        <h3 class="heading">Contact me :</h3>
+        <h3 class="heading" data-aos="fade-down">Contact me :</h3>
         <form action="https://formspree.io/f/xzbnvljv" method="post">
-          <div>
-            <label for="name">full name :</label>
+          <div data-aos="fade-up">
+            <label for="name" full name :>Full Name</label>
             <input
               type="text"
               name="fullname"
@@ -359,7 +363,7 @@
             />
           </div>
 
-          <div>
+          <div data-aos="fade-up">
             <label for="email">Email :</label>
             <input
               type="email"
@@ -369,7 +373,7 @@
               required
             />
           </div>
-          <div>
+          <div data-aos="fade-up">
             <label for="subject">subject :</label>
             <input
               type="text"
@@ -379,7 +383,7 @@
               required
             />
           </div>
-          <div>
+          <div data-aos="fade-up">
             <label for="message">message :</label><br />
             <textarea
               name="message"
@@ -388,12 +392,12 @@
               required
             ></textarea>
           </div>
-          <input type="submit" value="Send message " class="btn" />
+          <input type="submit" value="Send message " class="btn" data-aos="zoom-in">
         </form>
         <div style="text-align: center; margin-bottom: 2rem">
           <b style="border-bottom: 3px solid rebeccapurple">OR</b>
         </div>
-        <div class="extra-btns">
+        <div class="extra-btns" data-aos="zoom-out">
           <button type="button" class="btn">
             <a href="mailto:kumarmanjit9143@gmail.com">📧Email me</a>
           </button>
@@ -405,11 +409,11 @@
         </div>
       </div>
       <div class="contact-right">
-        <img src="./Images/contact us bg.jpg" alt="" />
+        <img src="./Images/contact us bg.jpg" alt="" data-aos="flip-left"/>
       </div>
     </section>
     <!-- contact section ends -->
-    <div class="thanks-container">
+    <div class="thanks-container" data-aos="flip-down">
       <div class="thanks">
         <h4>😊Thank You for your attention</h4>
         <p style="color: rgb(255, 178, 83)">have a good day✨</p>
@@ -417,7 +421,7 @@
     </div>
     <!-- footer section starts -->
     <footer>
-      <div class="copyright">
+      <div class="copyright" data-aos="fade-down">
         <h5>Copyright ©2024 All rights Reserved</h5>
         <h6 style="color: rgb(255, 170, 0)">
           Made by
@@ -464,5 +468,10 @@
     <!-- footer section ends -->
     <span id="scroll-top"><i class="fa-solid fa-angles-up"></i></span>
     <script src="script.js"></script>
+    <!-- <script src="../../assets/vendor/aos/dist/aos.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script>
+   AOS.init();
+</script>
   </body>
 </html>

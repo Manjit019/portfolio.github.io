@@ -944,7 +944,7 @@ footer {
     }
 
     .right-nav {
-      position: absolute;
+      position: fixed;
       top: 0;
       right: 0;
       background: var(--main-color);
@@ -970,7 +970,7 @@ footer {
         flex-direction: column;
       }
       & .nav-links {
-        width: 100%;
+        width: 50%;
         background: var(--light-bg--color);
         padding: 2px 10px;
         border-radius: 7px;
@@ -986,7 +986,7 @@ footer {
         -moz-transition: all 0.3s ease;
         -ms-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
-
+        text-align: center;
       }
       & .nav-links:hover {
         background: var(--supporting-color);
@@ -995,22 +995,22 @@ footer {
     }
   }
   .active .right-nav {
-    transform: translateX(-80%);
-    -webkit-transform: translateX(-80%);
-    -moz-transform: translateX(-80%);
-    -ms-transform: translateX(-80%);
-    -o-transform: translateX(-80%);
+    transform: translateX(-90%);
+    -webkit-transform: translateX(-90%);
+    -moz-transform: translateX(-90%);
+    -ms-transform: translateX(-90%);
+    -o-transform: translateX(-90%);
     opacity: 1;
     visibility: visible;
     pointer-events: all;
-  }
+}
 
   .active .fa-xmark {
     display: block;
     color: var(--white-color);
-    position: absolute;
+    position: fixed;
     top: 1rem;
-    left: 40%;
+    left: 35%;
     font-size: larger;
     padding: 6px;
     border: 2px solid var(--bg-color);

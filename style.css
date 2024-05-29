@@ -985,7 +985,7 @@ footer {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   position: fixed;
-  left: 85%;
+  left: 95%;
   cursor: pointer;
   z-index: 9999;
   transition: all 0.4s linear;
@@ -996,7 +996,10 @@ footer {
   background-color: var(--white-color);
   border: 3px solid var(--supporting-color);
   padding: 1rem;
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: none; */
   & .fa-solid {
     color: var(--black-color);
     font-size: 18px;
@@ -1083,11 +1086,11 @@ footer {
           left: 150%;
           margin-left: -3rem;
 
-          &::after{
-              left: 30%;
-              margin-left: -15px;
-            }
+          &::after {
+            left: 30%;
+            margin-left: -15px;
           }
+        }
       }
     }
 
@@ -1174,7 +1177,7 @@ footer {
     -ms-border-radius: 1000px;
     -o-border-radius: 1000px;
 
-    & .tooltip-text{
+    & .tooltip-text {
       bottom: -160%;
     }
   }
@@ -1260,10 +1263,8 @@ footer {
       }
     }
   }
-  #scroll-top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  #scroll-top{
+    left: 85%;
   }
 }
 

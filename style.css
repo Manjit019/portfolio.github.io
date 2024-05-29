@@ -92,7 +92,7 @@ p {
 }
 
 span {
-  color: #783aeb;
+  color: var(--span-color);
   /* background-color: var(--supporting-color); */
 }
 
@@ -314,7 +314,7 @@ header {
   cursor: pointer;
 }
 
-.three-dot .fa-xmark {
+.three-dot .fa-chevron-left {
   display: none;
 }
 .theme {
@@ -330,7 +330,7 @@ header {
   background: var(--white-color);
   color: var(--black-color);
   position: absolute;
-  bottom: -220%;
+  bottom: -250%;
   left: 50%;
   margin-left: -2.5rem;
   font-size: 14px;
@@ -1080,11 +1080,11 @@ footer {
     .right-nav {
       position: fixed;
       top: 0;
-      right: 0;
-      background: var(--main-color);
-      width: 60%;
+      left: 0;
+      background: var(--primary-color);
+      width: 50%;
       height: 100vh;
-      padding: 4rem 1rem 2rem 3rem;
+      padding: 4rem 1rem 2rem ;
       transform: translateX(-100%);
       -webkit-transform: translateX(-100%);
       -moz-transform: translateX(-100%);
@@ -1104,9 +1104,9 @@ footer {
         flex-direction: column;
       }
       & .nav-links {
-        width: 50%;
+        width: 70%;
         background: var(--light-bg--color);
-        padding: 2px 10px;
+        padding: 10px;
         border-radius: 100px;
         -webkit-border-radius: 100px;
         -moz-border-radius: 100px;
@@ -1134,32 +1134,32 @@ footer {
   }
 
   .active .right-nav {
-    transform: translateX(-90%);
-    -webkit-transform: translateX(-90%);
-    -moz-transform: translateX(-90%);
-    -ms-transform: translateX(-90%);
-    -o-transform: translateX(-90%);
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
     opacity: 1;
     visibility: visible;
     pointer-events: all;
-  
 }
 
-  .active .fa-xmark {
+  .active .fa-chevron-left {
     display: block;
     color: var(--white-color);
     position: fixed;
-    top: 1rem;
-    left: 35%;
-    font-size: larger;
-    padding: 6px;
+    top: 2rem;
+    left: 50%;
+    margin-left: -23px;
+    padding: 8px 12px;
     border: 2px solid var(--bg-color);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-  }
+    background: var(--primary-color);
+    border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    -ms-border-radius: 1000px;
+    -o-border-radius: 1000px;
+}
   .active .fa-bars {
     display: none;
   }

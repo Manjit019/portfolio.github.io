@@ -3,7 +3,7 @@
 
 const headerElem=document.querySelector(".header");
 const bar=document.querySelector(".fa-bars");
-const close=document.querySelector(".fa-xmark");
+const close=document.querySelector(".fa-chevron-left");
 
 bar.addEventListener("click",()=>{
     headerElem.classList.add("active");

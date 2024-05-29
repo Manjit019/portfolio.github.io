@@ -247,7 +247,9 @@ header {
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
   & .left-nav {
+    padding: 10px;
     padding-right: 2rem;
+
     color: var(--white-color);
     font-size: 1.2rem;
     font-weight: 700;
@@ -1078,11 +1080,12 @@ footer {
     }
 
     .right-nav {
+
       position: fixed;
       top: 0;
       left: 0;
       background: var(--primary-color);
-      width: 50%;
+      width: 60%;
       height: 100vh;
       padding: 4rem 1rem 2rem ;
       transform: translateX(-100%);
@@ -1099,6 +1102,7 @@ footer {
       visibility: hidden;
       pointer-events: none;
       overflow: auto;
+      z-index: -1;
       & ul {
         display: flex;
         flex-direction: column;
@@ -1149,7 +1153,7 @@ footer {
     color: var(--white-color);
     position: fixed;
     top: 2rem;
-    left: 50%;
+    left: 60%;
     margin-left: -23px;
     padding: 8px 12px;
     border: 2px solid var(--bg-color);

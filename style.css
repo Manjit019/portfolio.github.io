@@ -896,8 +896,8 @@ textarea {
   height: 5rem;
   resize: none;
 }
-::placeholder{
-  color:rgba(166, 139, 104, 0.755);
+::placeholder {
+  color: rgba(166, 139, 104, 0.755);
 }
 .extra-btns {
   width: 100%;
@@ -1010,7 +1010,7 @@ footer {
     left: -3.5rem;
 
     &:after {
-      border-color: transparent transparent transparent var(--white-color) ;
+      border-color: transparent transparent transparent var(--white-color);
       position: absolute;
       top: 30%;
       left: 110%;
@@ -1076,18 +1076,29 @@ footer {
         &:hover {
           border: 2px solid var(--light-bg--color);
         }
+
+        & .tooltip-text {
+          position: absolute;
+          bottom: -170%;
+          left: 150%;
+          margin-left: -3rem;
+
+          &::after{
+              left: 30%;
+              margin-left: -15px;
+            }
+          }
       }
     }
 
     .right-nav {
-
       position: fixed;
       top: 0;
       left: 0;
       background: var(--primary-color);
       width: 60%;
       height: 100vh;
-      padding: 4rem 1rem 2rem ;
+      padding: 4rem 1rem 2rem;
       transform: translateX(-100%);
       -webkit-transform: translateX(-100%);
       -moz-transform: translateX(-100%);
@@ -1110,7 +1121,7 @@ footer {
       & .nav-links {
         width: 70%;
         background: var(--light-bg--color);
-        padding: 10px;
+        padding: 5px;
         border-radius: 100px;
         -webkit-border-radius: 100px;
         -moz-border-radius: 100px;
@@ -1129,11 +1140,10 @@ footer {
       & .nav-links:hover {
         background: var(--supporting-color);
         cursor: pointer;
-
       }
-     & .nav-links:hover::after{
-      scale: 0.7;
-     }
+      & .nav-links:hover::after {
+        scale: 0.7;
+      }
     }
   }
 
@@ -1146,7 +1156,7 @@ footer {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
-}
+  }
 
   .active .fa-chevron-left {
     display: block;
@@ -1163,7 +1173,11 @@ footer {
     -moz-border-radius: 1000px;
     -ms-border-radius: 1000px;
     -o-border-radius: 1000px;
-}
+
+    & .tooltip-text{
+      bottom: -160%;
+    }
+  }
   .active .fa-bars {
     display: none;
   }

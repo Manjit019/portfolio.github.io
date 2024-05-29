@@ -38,3 +38,22 @@ window.onscroll=function(){
 scrolltopBtn.addEventListener('click',()=>{
     window.scrollTo(0,0);
 })
+
+
+//dark mode 
+
+const modeBtn=document.querySelector(".theme");
+modeBtn.addEventListener("click",(e)=>{
+
+    document.body.classList.toggle("lightMode");
+
+    if(e.target.classList.contains("fa-solid")){
+        modeBtn.classList.remove("fa-solid");
+        modeBtn.classList.add("fa-regular");
+    }
+    else{
+        modeBtn.classList.add("fa-solid");
+        modeBtn.classList.remove("fa-regular");
+    }
+})
+

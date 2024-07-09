@@ -520,6 +520,8 @@ header {
   gap: 2rem;
 
   & p {
+    font-size: 14px;
+    font-weight: 200;
     margin-top: -1rem;
     text-transform: none;
     line-height: 150%;
@@ -565,8 +567,6 @@ header {
   padding-top: 4rem;
   margin-top: 1rem;
   background-color: var(--primary-color);
-  /* display: flex;
-  flex-direction: column; */
   display: grid;
   grid-template-rows: subgrid;
   gap: 1rem;
@@ -580,6 +580,7 @@ header {
   position: relative;
 
   & .education-title {
+    
     margin-bottom: 1rem;
     text-align: center;
     background: var(--main-color);
@@ -596,6 +597,7 @@ header {
 
   & p {
     /* text-wrap: nowrap; */
+    font-size: 13px;
     line-height: 1.4rem;
     color: var(--white-color);
   }
@@ -1257,7 +1259,9 @@ footer {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
   }
-
+  .about-right p{
+    font-size: 10px;
+  }
   .education-section {
     padding: 1rem;
     padding-top: 2rem;

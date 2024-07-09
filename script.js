@@ -7,15 +7,20 @@ console.log(projects)
 const headerElem=document.querySelector(".header");
 const bar=document.querySelector(".fa-bars");
 const close=document.querySelector(".fa-chevron-left");
-
+const contentsWrapper = document.querySelector(".contents-wrapper");
 bar.addEventListener("click",()=>{
+    contentsWrapper.classList.add("blurred");
     headerElem.classList.add("active");
 })
 
 close.addEventListener("click",()=>{
+    contentsWrapper.classList.remove("blurred");
     headerElem.classList.remove("active");
 })
-
+contentsWrapper.addEventListener('click',(e)=>{
+    contentsWrapper.classList.remove("blurred");
+    headerElem.classList.remove("active"); 
+})
 ///
 let navContainer=document.querySelector(".right-nav ul");
 let links=navContainer.getElementsByTagName("a");

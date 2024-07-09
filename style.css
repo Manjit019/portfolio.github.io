@@ -250,7 +250,12 @@ btn-secondary:hover {
 .section-heading {
   padding: 1rem 6rem;
 }
-
+.contents-wrapper.blurred{
+  filter: blur(12px);
+  -webkit-filter: blur(12px);
+  overflow: hidden;
+  
+}
 /* header section starts  */
 header {
   width: 100%;
@@ -424,6 +429,7 @@ header {
   & p {
     margin-top: 1rem;
     color: var(--white-color);
+    font-size: 13px;
   }
 
   & .hero-left-btns {
@@ -1133,7 +1139,7 @@ footer {
       left: 0;
       background: var(--primary-color);
       width: 60%;
-      height: 100vh;
+      height: 100lvh;
       padding: 4rem 1rem 2rem;
       transform: translateX(-100%);
       -webkit-transform: translateX(-100%);
@@ -1157,7 +1163,8 @@ footer {
       & .nav-links {
         width: 70%;
         background: var(--light-bg--color);
-        padding: 5px;
+        padding: 8px 0;
+        font-size: 12px;
         border-radius: 100px;
         -webkit-border-radius: 100px;
         -moz-border-radius: 100px;
@@ -1192,7 +1199,14 @@ footer {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
-  }
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    transition:all 0.4s;
+    -webkit-transition:all 0.4s;
+    -moz-transition:all 0.4s;
+    -ms-transition:all 0.4s;
+    -o-transition:all 0.4s;
+}
 
   .active .fa-chevron-left {
     display: block;
@@ -1209,11 +1223,12 @@ footer {
     -moz-border-radius: 1000px;
     -ms-border-radius: 1000px;
     -o-border-radius: 1000px;
-
+    
     & .tooltip-text {
       bottom: -160%;
     }
   }
+  
   .active .fa-bars {
     display: none;
   }
@@ -1222,7 +1237,9 @@ footer {
 
     & .hero-left {
       padding: 2rem 1.4rem;
-
+      & p{
+        font-size: 11px;
+      }
       & .social {
         margin-top: 3rem;
         flex-direction: column;

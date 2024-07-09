@@ -1,0 +1,50 @@
+[
+    {
+        "project_id" : "1",
+        "project_title" : "Hostel Project :",
+        "project_desc" : "A hostel project of DC college hostel.",
+        "projet_img" : "./Images/dc hostel project img.jpg",
+        "project_link" : "https://manjit019.github.io/DC_hostel_Official.github.io/",
+        "tech" : ["HTML" , "CSS", "JavaScript"]
+    },
+    {
+        "project_id" : "2",
+        "project_title" : "ToDo list :",
+        "project_desc" : "A user friendly ToDo App with emersive user experience.",
+        "projet_img" : "./Images/todo app banner.png",
+        "project_link" : "https://manjit019.github.io/ToDo-List.github.io/",
+        "tech" : ["HTML" , "CSS", "JavaScript"]
+    },
+    {
+        "project_id" : "3",
+        "project_title" : "Weather App :",
+        "project_desc" : "View your current Weather of your city.",
+        "projet_img" : "./Images/weatherApp.jpg",
+        "project_link" : "https://manjit019.github.io/WeatherApp.github.io/",
+        "tech" : ["HTML" , "CSS", "JavaScript"]
+    },
+    {
+        "project_id" : "4",
+        "project_title" : "IRCTC PNR Status Checker",
+        "project_desc" : "Check Indian Railways PNR Status online. Enter your PNR number to get current status of your reservation.",
+        "projet_img" : "./Images/pnrstatus.png",
+        "project_link" : "https://pnrstatus.netlify.app/",
+        "tech" : ["HTML" , "tailwind CSS", "JavaScript"]
+    },
+    {
+        "project_id" : "5",
+        "project_title" : "Shukla Stationary Shop :",
+        "project_desc" : "The project is a stationary website that showcases a range of products like pens, notebooks, and art supplies. It provides a platform for users to browse and explore various stationary items, although it currently does not support online purchasing.",
+        "projet_img" : "./Images/shukla-stationary-cover.png",
+        "project_link" : "https://shuklastationary.netlify.app/",
+        "tech" : ["HTML" , "tailwind CSS", "JavaScript"]
+    },
+    {
+        "project_id" : "6",
+        "project_title" : "Sharma Electric :",
+        "project_desc" : "The site aims to inform visitors about the company's offerings and establish a professional online presence for potential customers seeking electrical services.",
+        "projet_img" : "./Images/sharma-electric-cover.png",
+        "project_link" : "https://manjit019.github.io/Sharma-electric.github.io/",
+        "tech" : ["HTML" , "CSS", "JavaScript"]
+    }
+]

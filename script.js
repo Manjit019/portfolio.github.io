@@ -1,4 +1,7 @@
 
+import projects from './myprojects.json' with { type: "json" };
+
+console.log(projects)
 // hamberger Element
 
 const headerElem=document.querySelector(".header");
@@ -56,4 +59,37 @@ modeBtn.addEventListener("click",(e)=>{
         modeBtn.classList.remove("fa-regular");
     }
 })
+
+
+//Rendering projects
+
+const projectContainer = document.querySelector(".project-section");
+const templateContainer = document.querySelector(".template-container");
+
+projects.forEach(project => {
+        
+        const projectClone = document.importNode(templateContainer.content,true)
+
+        projectClone.querySelector(".project-banner img").src=project.projet_img;
+
+        projectClone.querySelector(".project-title").textContent = project.project_title;
+
+        projectClone.querySelector(".desc").textContent = project.project_desc;
+
+        projectClone.querySelector(".link").href = project.project_link;
+
+        const techContainer= projectClone.querySelector(".tech-container");
+        let len = project.tech?.length;
+        console.log(len)
+        for (let i = 0; i < len; i++) {
+            const btnTech = document.createElement("button");
+            btnTech.className="tech-btn";
+            btnTech.textContent=project.tech[i];
+            techContainer.appendChild(btnTech)
+        }
+
+        projectContainer.append(projectClone);
+    });
+  
+
 

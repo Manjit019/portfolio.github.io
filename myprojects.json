@@ -1,5 +1,13 @@
 [
     {
+        "project_id" : "7",
+        "project_title" : "Apna Genius - Your Friendly AI Chatbot Assistant",
+        "project_desc" : "Apna Genius is your friendly AI chatbot assistant. Get personalized assistance and answers to your questions instantly.",
+        "projet_img" : "./Images/ApnaGenius cover.png",
+        "project_link" : "https://apnagenius.netlify.app/",
+        "tech" : ["HTML" , "CSS", "JavaScript"]
+    },
+    {
         "project_id" : "1",
         "project_title" : "Hostel Project :",
         "project_desc" : "A hostel project of DC college hostel.",

@@ -1,7 +1,6 @@
 
 import projects from './myprojects.json' with { type: "json" };
 
-console.log(projects)
 // hamberger Element
 
 const headerElem=document.querySelector(".header");
@@ -50,20 +49,35 @@ scrolltopBtn.addEventListener('click',()=>{
 
 //dark mode 
 
-const modeBtn=document.querySelector(".theme");
-modeBtn.addEventListener("click",(e)=>{
+const modeBtns=document.querySelectorAll(".theme");
+modeBtns.forEach(button => {
+    button.addEventListener("click",(e)=>{
 
-    document.body.classList.toggle("lightMode");
+        document.body.classList.toggle("lightMode");
+    
+        if(e.target.classList.contains("fa-solid")){
+        button.classList.remove("fa-solid");
+        button.classList.add("fa-regular");
+        }
+        else{
+        button.classList.add("fa-solid");
+        button.classList.remove("fa-regular");
+        }
+    })
+});
+// modeBtn.addEventListener("click",(e)=>{
 
-    if(e.target.classList.contains("fa-solid")){
-        modeBtn.classList.remove("fa-solid");
-        modeBtn.classList.add("fa-regular");
-    }
-    else{
-        modeBtn.classList.add("fa-solid");
-        modeBtn.classList.remove("fa-regular");
-    }
-})
+//     document.body.classList.toggle("lightMode");
+
+//     if(e.target.classList.contains("fa-solid")){
+//         modeBtn.classList.remove("fa-solid");
+//         modeBtn.classList.add("fa-regular");
+//     }
+//     else{
+//         modeBtn.classList.add("fa-solid");
+//         modeBtn.classList.remove("fa-regular");
+//     }
+// })
 
 
 //Rendering projects

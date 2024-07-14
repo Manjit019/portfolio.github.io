@@ -75,6 +75,7 @@ html {
   --black-color: #ffffff;
   --heading-color: #4443b1;
   --btn-color: #57a7e8;
+  --span-color: #ff9523;
   --box-shadow: rgba(3, 3, 3, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.185) 1px 1px 5px 0px;
 }
@@ -218,8 +219,9 @@ btn-secondary:hover {
 
 .heading {
   text-transform: uppercase;
-  color: var(--heading-color);
+  color: var(--span-color);
   position: relative;
+  display: inline-block;
 }
 
 .heading::before {
@@ -229,7 +231,7 @@ btn-secondary:hover {
   bottom: -11px;
   width: 4px;
   aspect-ratio: 1;
-  border: 5px solid var(--heading-color);
+  border: 4px solid var(--heading-color);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -242,8 +244,9 @@ btn-secondary:hover {
   position: absolute;
   bottom: -8px;
   left: 10px;
-  width: 25%;
-  border: 3px solid var(--heading-color);
+  /* width: calc(100% - (100% - var(--hwidth))); */
+  width: 95%;
+  border: 2px solid var(--heading-color);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -826,41 +829,38 @@ header {
   width: 100%;
   background: var(--primary-color);
   gap: 2rem;
+  justify-items: center;
 }
 .projects-container {
   width: 100%;
   height: 100%;
-  padding: 10px;
   position: relative;
-  /* overflow: hidden; */
+  /* padding:1px 1px 1px 1px; */
+  overflow: hidden;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
 
-}
-.projects-container::before {
-  content: "";
-  width: calc(100%-2px);
-  width: 10rem;
-  height: 100%;
-  background-image: conic-gradient(red, yellow, green, blue, black);
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: spin 10s linear infinite;
-  -webkit-animation: spin 10s linear infinite;
-}
 @keyframes spin {
   100% {
     rotate: 360deg;
   }
 }
 .project-wrapper {
-  width: 100%;
-  height: 100%;
+  width: 99%;
+  height: 99%;
   background: var(--main-color);
   padding: 1rem;
-  /* position: relative; */
-  /* overflow: hidden; */
-  display: grid;
-  grid-template-rows: subgrid;
+  position: relative;
+  overflow: hidden;
+  /* display: grid;
+  grid-template-rows: subgrid; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -877,6 +877,13 @@ header {
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
+
+  & .btn {
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+  }
 }
 .project-banner {
   width: 100%;
@@ -904,30 +911,34 @@ header {
   }
 }
 
-& .project-desc {
+.project-desc {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1rem;
   color: var(--white-color);
 
   & p {
     font-size: 10px;
     color: #979393dc;
-    margin-top: 10px;
+    margin: 1rem 0;
     text-align: justify;
     margin: 10px 0;
   }
 }
 
-.btn-wrapper {
-  width: 100%;
-  & .btn {
-    width: 100%;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
+.projects-container:hover::before {
+  content: "";
+  /* width: calc(100%-2px); */
+  width: 8rem;
+  height: 150%;
+  /* background-image: conic-gradient(rgba(255, 7, 238, 0.64) 20deg, rgba(94, 17, 74, 0.396) 0deg, transparent 90deg
+  ); */
+  background:linear-gradient(360deg, #ff8d0a, #ffffff, #8fff69); ;
+  position: absolute;
+  top: -25%;
+  left: 20%;
+  /* z-index:-1; */
+  animation: spin 10s linear infinite;
+  -webkit-animation: spin 3s linear infinite;
+  /* display: none; */
 }
 
 .project5 {
@@ -939,7 +950,7 @@ project6 {
 }
 .project-wrapper:hover {
   cursor: default;
-  scale: 1.09;
+  /* scale: 1.09; */
   & img {
     scale: 1.2;
   }

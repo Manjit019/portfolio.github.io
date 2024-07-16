@@ -1404,13 +1404,15 @@ footer {
       border-bottom-left-radius: 50%;
       position: relative;
       padding: 3px;
+      z-index: 5;
       & .figure {
+        
         & img {
           width: 100%;
           border-top-left-radius: 5%;
           border-top-right-radius: 5%;
           border-bottom-left-radius: 50%;
-         
+        
         }
 
         &::after {
@@ -1440,6 +1442,7 @@ footer {
     position: absolute;
     bottom: -4rem;
     scale: 1.1;
+    z-index: 2;
   }
   .about-right p {
     font-size: 10px;

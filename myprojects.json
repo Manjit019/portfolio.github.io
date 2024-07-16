@@ -4,6 +4,7 @@
         "project_title" : "Apna Genius - Your Friendly AI Chatbot Assistant",
         "project_desc" : "Apna Genius is your friendly AI chatbot assistant. Get personalized assistance and answers to your questions instantly.",
         "projet_img" : "./Images/ApnaGenius cover.png",
+        "project_alt" :"Apna Genius project cover",
         "project_link" : "https://apnagenius.netlify.app/",
         "tech" : ["HTML" , "CSS", "JavaScript"]
     },
@@ -12,6 +13,7 @@
         "project_title" : "DC College Hostel  ",
         "project_desc" : "Discover DC Hostel Official, a government hostel providing free accommodations for students.",
         "projet_img" : "./Images/dc hostel project img.jpg",
+        "project_alt" :"DC Hostel Project Banner",
         "project_link" : "https://manjit019.github.io/DC_hostel_Official.github.io/",
         "tech" : ["HTML" , "CSS", "JavaScript"]
     },
@@ -20,6 +22,7 @@
         "project_title" : "ToDo list :",
         "project_desc" : "Keep track of your tasks with ease! This simple and user-friendly to-do list app helps you organize your day, boost productivity, and never miss a deadline again.",
         "projet_img" : "./Images/todo app banner.png",
+        "project_alt" :"ToDo list app banner",
         "project_link" : "https://manjit019.github.io/ToDo-List.github.io/",
         "tech" : ["HTML" , "CSS", "JavaScript"]
     },
@@ -28,6 +31,7 @@
         "project_title" : "Weather App ",
         "project_desc" : "Get real-time weather updates with the WeatherApp. Check temperature, humidity, wind speed, and current conditions for any location worldwide.",
         "projet_img" : "./Images/weatherApp.jpg",
+        "project_alt" :"Weather app banner",
         "project_link" : "https://manjit019.github.io/WeatherApp.github.io/",
         "tech" : ["HTML" , "CSS", "JavaScript"]
     },
@@ -36,6 +40,7 @@
         "project_title" : "IRCTC PNR Status Checker",
         "project_desc" : "Check Indian Railways PNR Status online. Enter your PNR number to get current status of your reservation.",
         "projet_img" : "./Images/pnrstatus.png",
+        "project_alt" :"PNR status project banner",
         "project_link" : "https://pnrstatus.netlify.app/",
         "tech" : ["HTML" , "tailwind CSS", "JavaScript"]
     },
@@ -44,6 +49,7 @@
         "project_title" : "Shukla Stationary Shop :",
         "project_desc" : "The project is a stationary website that showcases a range of products like pens, notebooks, and art supplies. It provides a platform for users to browse and explore various stationary items, although it currently does not support online purchasing.",
         "projet_img" : "./Images/shukla-stationary-cover.png",
+        "project_alt" :"Shukla stationary Banner",
         "project_link" : "https://shuklastationary.netlify.app/",
         "tech" : ["HTML" , "tailwind CSS", "JavaScript"]
     },
@@ -52,6 +58,7 @@
         "project_title" : "Sharma Electric :",
         "project_desc" : "The site aims to inform visitors about the company's offerings and establish a professional online presence for potential customers seeking electrical services.",
         "projet_img" : "./Images/sharma-electric-cover.png",
+        "project_alt" :"Sharma electric Banner",
         "project_link" : "https://manjit019.github.io/Sharma-electric.github.io/",
         "tech" : ["HTML" , "CSS", "JavaScript"]
     }

@@ -91,6 +91,8 @@ projects.forEach(project => {
 
         projectClone.querySelector(".project-banner img").src=project.projet_img;
 
+        projectClone.querySelector(".project-banner img").alt=project.project_alt;
+
         projectClone.querySelector(".project-title").textContent = project.project_title;
 
         projectClone.querySelector(".desc").textContent = project.project_desc;

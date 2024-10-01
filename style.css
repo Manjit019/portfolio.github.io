@@ -823,11 +823,11 @@ header {
 }
 .skills-bar-container:nth-child(2) {
   & .skill-bar-progress {
-    width: 80%;
+    width: 90%;
   }
 
   & .carret {
-    left: 80%;
+    left: 90%;
   }
 }
 
@@ -843,11 +843,11 @@ header {
 
 .skills-bar-container:nth-child(4) {
   & .skill-bar-progress {
-    width: 25%;
+    width: 50%;
   }
 
   & .carret {
-    left: 25%;
+    left: 50%;
   }
 }
 
@@ -892,8 +892,8 @@ header {
   }
 }
 .project-wrapper {
-  width: 99%;
-  height: 99%;
+  width: 99.8%;
+  height: 99.8%;
   background: var(--main-color);
   padding: 1rem;
   position: relative;
@@ -1005,6 +1005,7 @@ project6 {
 
   & form {
     padding: 1rem 0;
+    margin-top: 2rem;
   }
 }
 
@@ -1018,22 +1019,19 @@ label {
 input,
 textarea {
   width: 100%;
-  height: 2rem;
+  height: 2.5rem;
+  font-size: 14px;
   background: transparent;
   color: var(--white-color);
   border: 1.5px solid var(--light-bg--color);
   margin-bottom: 1rem;
-  padding: 5px 8px;
+  padding: 5px 12px;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: 10px;
 
   &:hover {
     border-color: var(--bg-color);
@@ -1047,6 +1045,7 @@ textarea {
 }
 ::placeholder {
   color: rgba(166, 139, 104, 0.755);
+  font-size: 12px;
 }
 .extra-btns {
   width: 100%;
@@ -1201,6 +1200,8 @@ footer {
   }
   .section-heading {
     padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
   }
   header {
     justify-content: flex-start;
@@ -1403,7 +1404,7 @@ footer {
       border-top-right-radius: 5%;
       border-bottom-left-radius: 50%;
       position: relative;
-      padding: 3px;
+      padding: 2px;
       z-index: 5;
       & .figure {
         
@@ -1444,6 +1445,7 @@ footer {
     scale: 1.1;
     z-index: 2;
   }
+  
   .about-right p {
     font-size: 10px;
   }
